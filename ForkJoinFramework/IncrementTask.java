@@ -7,7 +7,9 @@ of the array hence we write the main implementation in the compute() . The objec
 async using invokeAll() which forks or invokes all the forkjoin tasks supplied to it .
 
 Key Point : Here the objects that we create are objects of a class ForkJoin type due to which these objects behave like a task,
-the implementation here is divide and conquer but inside the Object's overridden compute() .
+the implementation here is divide and conquer but inside the Object's overridden compute() . In this code , the task is broken down
+to array size of 4 or less. The implementation is done via sequential method as defined in the code but the task breaking is
+done by fork join framework. 
  */
 
 public class IncrementTask extends RecursiveAction {
