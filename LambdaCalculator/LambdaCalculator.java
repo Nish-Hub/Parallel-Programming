@@ -15,11 +15,12 @@ public static void main(String[] args) {
 }
 	
 // Defining the lambda functional variables	
-static Add add =(int a,int b)-> a+b;
-static Mul mul=(int a,int b)-> a*b;
-static Subtract sub=(int a,int b)->Math.abs(a-b);
-static LengthFinder lFinder=(String s)->s.length();
-static FindCharacter fChar=(char [] a,char c) ->
+// Defining the lambda functional variables	
+static Add add =(a,b)-> a+b;
+static Mul mul=(a,b)-> a*b;
+static Subtract sub=(a,b)->Math.abs(a-b);
+static LengthFinder lFinder=(s)->s.length();
+static FindCharacter fChar=(a,c) ->
 {
 
 	for (int i = 0; i < a.length; i++)
