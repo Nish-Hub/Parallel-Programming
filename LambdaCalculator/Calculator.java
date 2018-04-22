@@ -1,4 +1,4 @@
-package com.code.LambdaCalculator;
+
 
 public interface Calculator
 {
