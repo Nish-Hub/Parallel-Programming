@@ -19,7 +19,7 @@ public static void main(String[] args) {
 static Add add =(a,b)-> a+b;
 static Mul mul=(a,b)-> a*b;
 static Subtract sub=(a,b)->Math.abs(a-b);
-static LengthFinder lFinder=(s)->s.length();
+static LengthFinder lFinder=s->s.length();
 static FindCharacter fChar=(a,c) ->
 {
 
