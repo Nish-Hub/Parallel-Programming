@@ -1,4 +1,4 @@
-package com.code.LambdaCalculator;
+
 /*
  * The point to note here is to use the interface calculator we have to make a implementation class of the calculator
  * interface and then use this object to use the calculator methods. This overhead is removed in the anonymous class
