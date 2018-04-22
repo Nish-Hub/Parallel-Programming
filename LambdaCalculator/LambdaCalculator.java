@@ -12,6 +12,12 @@ public static void main(String[] args) {
 	sub.subtract(1, 2);
 	lFinder.stringLength(a.toString());
 	fChar.findChar(a, 'c');
+	areWeDone(() -> System.out.println("are We Done? Hell Yes")); // passing lambda function to the method as functional interfaces
+}
+public static void areWeDone(Status s)
+{
+	s.areWeDone();
+	//System.out.println("are We Done? Hell "+s.areWeDone(););
 }
 	
 // Defining the lambda functional variables	
@@ -50,4 +56,9 @@ public int stringLength(String s);
 interface FindCharacter
 {
 	public int findChar(char[] a,char c);
+}
+interface Status
+{
+	public void areWeDone();
+	//public void areWeDone(String s);
 }
