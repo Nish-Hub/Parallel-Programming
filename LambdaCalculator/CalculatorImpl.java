@@ -1,4 +1,4 @@
-package com.code.LambdaCalculator;
+
 
 public class CalculatorImpl implements Calculator {
 	// The implementation of the body of the interface Calculator	
