@@ -7,7 +7,8 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 public class ArraySumRecursiveTask extends RecursiveTask<Integer> {
-int lo=0,hi=0,sum=0;
+static int SEQUENTIAL_THRESHOLD=4;	
+int lo=0,hi=0;
 int[] arr=null;
 public ArraySumRecursiveTask(int[] arr,int lo,int hi) {
 	// TODO Auto-generated constructor stub
@@ -31,7 +32,7 @@ protected Integer compute() {
 		return 0;
 	if(lo==hi)
 		return arr[lo];
-	if(hi-lo <4)
+	if(hi-lo <SEQUENTIAL_THRESHOLD)
 	{
 		int sum=0;
 		for(int i=lo;i<hi;i++)
