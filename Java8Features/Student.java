@@ -1,4 +1,4 @@
-package com.code.LambdaStreams;
+
 
 public class Student {
 int marks;
